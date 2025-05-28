@@ -1,4 +1,4 @@
-# 📇 Controle de Contatos
+#📇 Controle de Contatos
 MIT LICENCE: (https://img.shields.io/npm/l/react)].(https://github.com/kevinLdias/CRUDv1/blob/main/LICENSE)
 
 Este é um projeto simples de gerenciamento de contatos desenvolvido com ASP.NET Core MVC. Ele permite **cadastrar, editar, excluir e listar contatos** de forma prática.
