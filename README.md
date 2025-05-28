@@ -1,10 +1,7 @@
 # 📇 Controle de Contatos
+MIT LICENCE: (https://img.shields.io/npm/l/react)].(https://github.com/kevinLdias/CRUDv1/blob/main/LICENSE)
 
 Este é um projeto simples de gerenciamento de contatos desenvolvido com ASP.NET Core MVC. Ele permite **cadastrar, editar, excluir e listar contatos** de forma prática.
-
-## 🚀 Acesse o projeto online
-
-🔗 [Clique aqui para acessar a aplicação](https://seusite.com)  
 
 ## 🛠 Tecnologias utilizadas
 
@@ -33,19 +30,28 @@ Controlecontatos/
 ├── wwwroot/
 ├── appsettings.json
 
-Caso deseje rodar localmente, siga os passos abaixo:
+Como rodar localmente, siga os passos abaixo:
+``` bash
+
+Devem estar instalados:
+Versão .net 8.0, com pacotes EF Core / EF Core Design / EF SQL SERVER e EF Core Tools - todos na versão 8.0.16 
 
 1. Clone o repositório:
-   git clone https://github.com/seuusuario/Controlecontatos.git
+   git clone https://github.com/KevinLDias/Controlecontatos.git
 
 2. Abra o projeto com o Visual Studio.
 
-3. Configure a connection string no arquivo appsettings.json.
+3. Configure a connection string no arquivo appsettings.json (com seu id de usuário do seu SQL e sua senha).
 
-4. Rode as migrations (se aplicável):
+4. Rode as migrations:
 -dotnet ef database update
 
 5. Execute a aplicação:
-
 -dotnet run
+```
+
+Autor:
+
+Kevin Gabriel Lima Dias
+📧 kevinhg2222@gmail.com
 
