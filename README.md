@@ -37,7 +37,7 @@ Devem estar instalados:
 Versão .net 8.0, com pacotes EF Core / EF Core Design / EF SQL SERVER e EF Core Tools - todos na versão 8.0.16 
 
 1. Clone o repositório:
-   git clone https://github.com/KevinLDias/Controlecontatos.git
+   git clone https://github.com/kevinLDias/Controlecontatos.git
 
 2. Abra o projeto com o Visual Studio.
 
