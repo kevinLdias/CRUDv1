@@ -39,18 +39,69 @@ public class ContatoController : Controller
     [HttpPost]
     public IActionResult Adicionar(ContatoModel contato)
     {
-        _contatoRepositorio.Adicionar(contato);
-        return RedirectToAction("Index");
+        try
+        {
+            if (ModelState.IsValid)
+            {
+                _contatoRepositorio.Adicionar(contato);
+                TempData["MensagemSucesso"] = "Contato cadastrado com sucesso!";
+                return RedirectToAction("Index");
+            }
+
+            return View(contato);
+        }
+        catch (System.Exception error)
+        {
+            TempData["MensagemErro"] =
+                "Ops...Não conseguimos cadastrar seu contato, tente novamente. Detalhe do erro:" +
+                error.Message;
+            return RedirectToAction("Index");
+        }
     }
+
     [HttpPost]
     public IActionResult Alterar(ContatoModel contato)
     {
-        _contatoRepositorio.Atualizar(contato);
-        return RedirectToAction("Index");
+        try
+        {
+            if (ModelState.IsValid)
+            {
+                _contatoRepositorio.Atualizar(contato);
+                TempData["MensagemSucesso"] = "Contato alterado com sucesso!";
+                return RedirectToAction("Index");
+            }
+
+            return View("Editar", contato);
+        }
+        catch (System.Exception error)
+        {
+            TempData["MensagemErro"] =
+                "Ops...Não conseguimos atualizar seu contato, tente novamente. Detalhe do erro:" +
+                error.Message;
+            return RedirectToAction("Index");
+        }
     }
+
     public IActionResult Remover(int id)
     {
-        _contatoRepositorio.Remover(id);
-        return RedirectToAction("Index");
+        try
+        {
+            if (_contatoRepositorio.Remover(id))
+            {
+                TempData["MensagemSucesso"] = "Contato deletado com sucesso!";
+            }
+            else
+            {
+                TempData["MensagemErro"] = "Ops...Não conseguimos apagar seu contato, tente novamente.";
+            }
+
+            return RedirectToAction("Index");
+        }
+        catch (System.Exception error)
+        {
+            TempData["MensagemErro"] = "Ops...Não conseguimos apagar seu contato, tente novamente. Detalhe do erro:" +
+                                       error.Message;
+            return RedirectToAction("Index");
+        }
     }
 }
