@@ -92,7 +92,7 @@ git clone git@github.com:kevinLdias/CRUDv1.git
 
 Abra o projeto no Rider:
 
-Vá em File > Open... e selecione a pasta ControleContatos.
+Vá em File > Open... e selecione a pasta CRUDv1.
 
 Restaure os pacotes NuGet:
 
