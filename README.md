@@ -54,7 +54,7 @@ ControleContatos/
 1. **Clone o repositório:**
 
 ```bash
-git clone https://github.com/kevinLDias/Controlecontatos.git
+git clone git@github.com:kevinLdias/CRUDv1.git
 ```
 Abra o projeto:
 
@@ -87,7 +87,7 @@ Clone o repositório:
 
 ```bash
 
-git clone https://github.com/kevinLDias/Controlecontatos.git
+git clone git@github.com:kevinLdias/CRUDv1.git
 ```
 
 Abra o projeto no Rider:
