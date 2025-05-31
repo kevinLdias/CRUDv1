@@ -1,5 +1,8 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36127.28 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Controlecontatos", "Controlecontatos\Controlecontatos.csproj", "{07C2B61C-FD6F-4611-8B64-ACF300201D80}"
 EndProject
 Global
@@ -12,5 +15,8 @@ Global
 		{07C2B61C-FD6F-4611-8B64-ACF300201D80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{07C2B61C-FD6F-4611-8B64-ACF300201D80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{07C2B61C-FD6F-4611-8B64-ACF300201D80}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 EndGlobal
